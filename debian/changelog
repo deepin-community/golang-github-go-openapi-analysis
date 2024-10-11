@@ -1,5 +1,84 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-go-openapi-analysis (0.23.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release.
+    - Refresh patches for new upstream release.
+    - Bump golang-github-go-openapi-spec-dev dependencies to >= 1:0.21.0~.
+  * Wrap and sort -ast.
+  * Switch to Standards-Version 4.7.0 (no changes needed).
+  * Add myself to Uploaders.
+  * Update copyright years.
+  * Fix typo in patch Description field.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Guillem Jover <gjover@sipwise.com>  Tue, 17 Sep 2024 22:19:52 +0200
+
+golang-github-go-openapi-analysis (0.21.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    - Remove spurious tabs in YAML fixtures patch, merged upstream.
+
+ -- Guillem Jover <gjover@sipwise.com>  Fri, 11 Mar 2022 20:50:34 +0100
+
+golang-github-go-openapi-analysis (0.21.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Update debian/watch file.
+  * Disable test case requiring network access. (Closes: #1002258)
+
+ -- Guillem Jover <gjover@sipwise.com>  Tue, 28 Dec 2021 16:32:54 +0100
+
+golang-github-go-openapi-analysis (0.21.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update Go Team Maintainer address.
+  * Switch to debhelper-compat level 13.
+  * Switch to Standards-Version 4.6.0 (no changes needed).
+  * Remove ${shlibs:Depends} from -dev Depends.
+  * Switch Section to golang.
+  * Set Rules-Requires-Root to no.
+  * Mark -dev package as Multi-Arch: foreign.
+  * Move license location on Debian systems into a Comment field.
+  * Update gbp configuration following Go Team new workflow.
+  * Update gitlab-ci.yml from its canonical source.
+  * Fix debian/watch syntax.
+  * Update debian/watch to format 4.
+  * Update copyright claims.
+  * Use dh-sequence-golang instead of dh-golang and --with=golang.
+  * Set the build directory to _build.
+  * Add Bug-Database and Bug-Submit to upstream metadata.
+  * Add new .gitignore file.
+  * Add new test only dependencies.
+  * Fix yaml fixture to make test suite pass.
+  * Enable test suite.
+
+ -- Guillem Jover <gjover@sipwise.com>  Thu, 25 Nov 2021 18:06:10 +0100
+
+golang-github-go-openapi-analysis (0.15.0-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository, Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Fri, 05 Feb 2021 02:09:38 +0000
+
+golang-github-go-openapi-analysis (0.15.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Martina Ferrari ]
+  * New upstream release.
+  * Automatic cme fixes.
+  * Update gbp configuration.
+  * Update dependencies.
+
+ -- Martina Ferrari <tincho@debian.org>  Tue, 29 Oct 2019 08:39:14 +0000
+
+golang-github-go-openapi-analysis (0.0~git20160815.0.b44dc87-1) unstable; urgency=medium
+
+  * Initial release (Closes: #857103)
+
+ -- Tim Potter <tpot@hpe.com>  Wed, 22 Feb 2017 07:20:58 +1100
