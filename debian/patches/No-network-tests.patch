@@ -1,0 +1,21 @@
+Description: Disable test cases requiring network access
+Author: Guillem Jover <gjover@sipwise.com>
+Origin: other, Sipwise
+Forwarded: no
+Last-Update: 2021-12-28
+
+---
+ flatten_test.go |    2 ++
+ 1 file changed, 2 insertions(+)
+
+--- a/flatten_test.go
++++ b/flatten_test.go
+@@ -1224,6 +1224,8 @@ func TestFlatten_1851(t *testing.T) {
+ }
+ 
+ func TestFlatten_RemoteAbsolute(t *testing.T) {
++	t.Skip("Skipping case requiring network")
++
+ 	for _, toPin := range []string{
+ 		// this one has simple remote ref pattern
+ 		filepath.Join("fixtures", "bugs", "remote-absolute", "swagger-mini.json"),
